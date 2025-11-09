@@ -64,6 +64,9 @@ pytest tests/test_CalcApplication.py -v
 
 # Generate HTML report
 pytest tests/test_CalcApplication.py --html=reports/pytest_report.html
+
+#**Setup Time**: ~60s (button discovery)
+#**Test Execution**: ~100s for full suite
 ```
 
 #### 🔧 Method 2: Run Individual Tests
