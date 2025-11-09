@@ -1,0 +1,73 @@
+# ========================
+# TELENIUM CALCULATOR PROJECT
+# ========================
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+calculator_env/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ========================
+# TELENIUM SPECIFIC
+# ========================
+
+# Screenshots from automation tests
+*.png
+*.jpg
+*.jpeg
+telenium_calculator_final.png
+pytest_calculator_final.png
+
+# Test reports and output
+reports/
+pytest_report.html
+test_output/
+automation_output/
+
+# Telenium artifacts
+.telenium/
+
+# ========================
+# PROJECT SPECIFIC
+# ========================
+
+# Log files
+*.log
+calculator.log
+automation.log
+debug.log
+
+# Backup and temporary files
+*_backup.*
+*_old.*
+*.bak
+*.tmp
+
+# Test cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+.env.local

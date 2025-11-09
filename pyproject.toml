@@ -1,0 +1,33 @@
+[tool.pytest.ini_options]
+# Pytest configuration for Calculator automation tests
+
+# Test discovery
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+# Output options
+addopts = [
+    "-v",                    # verbose output
+    "--tb=short",           # shorter traceback format
+    "--strict-markers",     # strict marker usage
+    "--disable-warnings",   # hide warnings for cleaner output
+    "-ra",                  # show short test summary for all tests
+    "--html=reports/pytest_report.html", # HTML report
+    "--self-contained-html" # single file HTML report
+]
+
+# Test markers (for categorizing tests)
+markers = [
+    "smoke: Quick smoke tests",
+    "regression: Full regression suite",
+    "ui: UI automation tests",
+    "calculator: Calculator specific tests"
+]
+
+# Minimum Python version
+minversion = "3.8"
+
+# Test timeout (in seconds)
+timeout = 300

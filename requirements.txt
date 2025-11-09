@@ -1,0 +1,16 @@
+# Calculator Automation Dependencies
+
+# Core GUI framework
+kivy>=2.2.0
+
+# UI automation and testing
+telenium>=0.4.5
+
+# Optional: Testing framework for pytest
+pytest>=7.0.0
+pytest-html>=3.0.0
+pytest-cov>=4.0.0
+
+# Optional (only needed if running headless in CI)
+xvfbwrapper>=0.2.9
+
