@@ -32,45 +32,6 @@ A comprehensive demonstration of UI automation testing using **Telenium** with a
 
 This project demonstrates modern Kivy architecture with **separation of concerns**.
 
-### 📄 `calcapplication.kv` - UI Definition
-```kv
-<CalcApplicationWidget>:
-    orientation: 'vertical'
-    spacing: 5
-    padding: 10
-
-    Label:
-        id: display
-        text: '0'
-        font_size: 32
-        # ... styling and layout
-
-    GridLayout:
-        cols: 4
-        Button:
-            text: 'C'
-            on_press: root.on_button(self)
-            # ... more buttons
-```
-
-### 🐍 `CalcApplication.py` - Business Logic
-```python
-class CalcApplicationWidget(BoxLayout):
-    def on_button(self, instance):
-        """Handle button presses - called from KV"""
-        btn_text = instance.text
-        # ... business logic only
-
-    def update_display(self, text):
-        """Update display using KV ids"""
-        self.ids.display.text = str(text)
-```
-
-### Benefits of KV Architecture:
-- 🎯 **Clean Separation** - UI markup separate from Python logic
-- 🔧 **Easy Styling** - CSS-like properties in KV files
-- 🚀 **Faster Development** - Hot reload and visual design
-- 🛠️ **Maintainable** - Easier to modify layouts without touching logic
 
 ## 🧪 Test Files Overview
 
