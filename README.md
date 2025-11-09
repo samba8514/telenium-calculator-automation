@@ -39,9 +39,6 @@ This project includes a **professional pytest-based test suite**:
 
 ### 📄 `tests/test_CalcApplication.py` (Tests Directory)
 - **Pytest Framework** - Professional test organization
-- **Class-based Structure** - Clean, maintainable test suite
-- **Performance Optimized** - Shared setup for faster execution
-- **CI/CD Ready** - Designed for automated testing pipelines
 - **Comprehensive Coverage** - Tests all calculator operations
 
 ## 🚀 Quick Start
